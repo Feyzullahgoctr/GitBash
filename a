@@ -1,0 +1,25 @@
+warning: in the working copy of 'src/Main.java', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/Customer.java b/src/Customer.java[m
+[1mindex ebc12bb..08b4ccf 100644[m
+[1m--- a/src/Customer.java[m
+[1m+++ b/src/Customer.java[m
+[36m@@ -2,5 +2,6 @@[m [mpublic class Customer {[m
+ [m
+     private String name;[m
+     private int age;[m
+[32m+[m[32m    private String lastname;[m
+ [m
+ }[m
+[1mdiff --git a/src/Main.java b/src/Main.java[m
+[1mindex 6df9c06..f315efd 100644[m
+[1m--- a/src/Main.java[m
+[1m+++ b/src/Main.java[m
+[36m@@ -5,7 +5,7 @@[m [mvoid main() {[m
+     // to see how IntelliJ IDEA suggests fixing it.[m
+     IO.println(String.format("Hello and welcome!"));[m
+ [m
+[31m-    for (int i = 2; i <= 5; i++) {[m
+[32m+[m[32m    for (int i = 3; i <= 5; i++) {[m
+         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint[m
+         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.[m
+         IO.println("i = " + i);[m
